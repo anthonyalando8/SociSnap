@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "313484729620",
+    "project_id": "socisnap",
+    "storage_bucket": "socisnap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313484729620:android:ef788de8adb3ff577c3601",
+        "android_client_info": {
+          "package_name": "com.softtronic.socisnap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313484729620-g2apq80mg1qb8c29ifu4ltb7e67o7bau.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOPk9xErje-pt7PIjPcHCqIj6NxjnIbZs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313484729620-g2apq80mg1qb8c29ifu4ltb7e67o7bau.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

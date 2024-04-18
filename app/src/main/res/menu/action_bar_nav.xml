@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item
+        android:id="@+id/action_chat"
+        android:title="Users"
+        android:icon="@drawable/baseline_chat_white"
+        app:showAsAction="always" />-->
+    <item
+        android:id="@+id/action_users"
+        android:title="Users"
+        android:icon="@drawable/baseline_people_white"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_posts"
+        android:title="Post"
+        android:icon="@drawable/baseline_post_add_white"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_account"
+        android:title="Account"
+        android:icon="@drawable/baseline_account_circle_white"
+        app:showAsAction="always" />
+</menu>
