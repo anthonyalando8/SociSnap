@@ -11,6 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.browser.customtabs.CustomTabColorSchemeParams;
+import androidx.browser.customtabs.CustomTabsIntent;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
@@ -83,7 +86,14 @@ public class MainActivity extends AppCompatActivity {
             } else if (item.getItemId() == R.id.nav_post ) {
                 openFragment(new PostFragment(), "Status");
             } else if (item.getItemId() == R.id.nav_softChatAI) {
-                openFragment(new SoftChatAIFragment(), "SoftChatAI");
+                //openFragment(new SoftChatAIFragment(), "SoftChatAI");
+                CustomTabsIntent.Builder builder = new CustomTabsIntent.Builder();
+                CustomTabColorSchemeParams darkParams = new CustomTabColorSchemeParams.Builder().setToolbarColor(
+                        getResources().getColor(R.color.primary, getTheme())).build();
+                builder.setColorSchemeParams(CustomTabsIntent.COLOR_SCHEME_DARK, darkParams);
+                builder.setShowTitle(true); // Show or hide title
+                CustomTabsIntent customTabsIntent = builder.build();
+                customTabsIntent.launchUrl(this, Uri.parse("https://anthony001.pythonanywhere.com/chat/"));
             } else if (item.getItemId() == R.id.nav_settings ) {
                 //Nothing
             } else if (item.getItemId() == R.id.nav_help ) {
