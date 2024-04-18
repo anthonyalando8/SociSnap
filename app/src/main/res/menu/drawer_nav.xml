@@ -9,6 +9,10 @@
         android:icon="@drawable/account_icon"
         android:title="My Account" />
     <item
+        android:id="@+id/nav_softChatAI"
+        android:icon="@drawable/computer"
+        android:title="SoftChatAI"/>
+    <item
         android:id="@+id/nav_chats"
         android:icon="@drawable/baseline_chat"
         android:title="Chats" />

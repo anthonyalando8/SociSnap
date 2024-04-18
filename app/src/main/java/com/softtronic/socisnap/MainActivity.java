@@ -82,6 +82,8 @@ public class MainActivity extends AppCompatActivity {
                 //Nothing
             } else if (item.getItemId() == R.id.nav_post ) {
                 openFragment(new PostFragment(), "Status");
+            } else if (item.getItemId() == R.id.nav_softChatAI) {
+                openFragment(new SoftChatAIFragment(), "SoftChatAI");
             } else if (item.getItemId() == R.id.nav_settings ) {
                 //Nothing
             } else if (item.getItemId() == R.id.nav_help ) {
