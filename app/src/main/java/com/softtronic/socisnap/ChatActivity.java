@@ -91,7 +91,7 @@ public class ChatActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setStackFromEnd(true);
         recyclerView = findViewById(R.id.chatrecycle);
-        recyclerView.setHasFixedSize(true);
+        //recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(linearLayoutManager);
         uid = getIntent().getStringExtra("uid");
 
